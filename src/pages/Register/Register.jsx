@@ -18,7 +18,7 @@ const Register = () => {
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get ('password');
-        const accepted= form.get ('checkbox');
+        const accepted= e.target.terms.checked
         console.log(name,photo,email,password,accepted);
         //reset success and error
         // setRegisterSuccess('')
@@ -57,12 +57,12 @@ const Register = () => {
     }
     return (
         <div className="">
-            <div className="w-2/5 bg-white rounded-lg shadow-md py-20 m-auto mt-24 mb-40">
-                <h3 className="text-3xl  text-center font-semibold text-gray-800 "> Register your account</h3>
-                  <div className="lg:w-3/4 mx-auto my-12">
+            <div className="w-5/6 lg:w-2/5 bg-white rounded-lg shadow-md py-20 m-auto mt-24 mb-40">
+                <h3 className="text-2xl md:text-3xl  text-center font-medium md:font-semibold text-gray-800 "> Register your account</h3>
+                  <div className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto my-12">
                   <hr />
                   </div>
-                <form onSubmit={handleRegister} className=" md:w-3/4 lg:w-3/4 mx-auto">
+                <form onSubmit={handleRegister} className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto">
                     <div className="form-control">
                         <label className="label">
                             <span className="label-text text-xl font-semibold text-gray-800 mb-1 ">Your Name:</span>
@@ -114,7 +114,8 @@ const Register = () => {
                         <button className="btn text-xl font-semibold bg-orange-600 text-white">Register</button>
                     </div>
                 </form>
-                <p className="text-center my-7 text-base font-semibold "> Already have an account ? Please <Link to="/login"
+                <p className=" w-4/5 md:w-3/4 lg:w-3/4 m-auto
+                 text-center my-7 text-base font-semibold "> Already have an account ? Please <Link to="/login"
                  className="text-orange-600"> Login</Link></p>
             </div>
         </div>
