@@ -20,8 +20,7 @@ console.log(greetign);
 - B: `ReferenceError: greetign is not defined`
 - C: `undefined`
 
-<details><summary><b>Answer</b></summary>
-<p>
+
 
 #### Answer: A:{} . 
 
@@ -30,8 +29,7 @@ console.log(greetign);
  
 In the code provided, a variable named "greeting" is declared.
    Then, there is  assigns an empty object to a variable named "greetign"  . Finally, when you log "greetign" to the console, it will output an empty object, as that is the value assigned to "greetign.
-</p>
-</details>
+
 
 ###### 2. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
