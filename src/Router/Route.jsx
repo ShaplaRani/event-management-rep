@@ -7,6 +7,7 @@ import Home from "../pages/Home/Home";
 import ServiceDetails from "../components/ServiceDetails/ServiceDetails";
 import PrivateRouter from "../PrivateRouter/PrivateRouter";
 import Contact from "../pages/Contact/Contact";
+import Teams from "../pages/Teams/Teams";
 
 const router = createBrowserRouter([{
     path:"/",
@@ -34,7 +35,12 @@ const router = createBrowserRouter([{
         },
         {
             path:"/contact",
-            element:<Contact></Contact>
+            element:<PrivateRouter><Contact></Contact></PrivateRouter>
+        },
+        {
+            path: "/about",
+            element:<PrivateRouter><Teams></Teams></PrivateRouter>,
+            loader: () => fetch("teams.json")
         }
     ]
 }])

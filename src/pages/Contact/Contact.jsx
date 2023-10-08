@@ -1,5 +1,6 @@
 
 import { BiMap } from 'react-icons/bi';
+import { RiEditBoxLine } from 'react-icons/ri';
 import {BsTelephone,BsClock } from 'react-icons/bs';
 
 const Contact = () => {
@@ -39,7 +40,7 @@ const Contact = () => {
             </div>
             {/* 4 */}
             <div className="border p-5 ">
-                <p className="text-center flex justify-center text-5xl"> <BiMap></BiMap></p>
+                <p className="text-center flex justify-center text-5xl"> <RiEditBoxLine></RiEditBoxLine></p>
                 <div className='mt-3 text-center'>
                     <h3 className="text-xl font-medium">Sessions</h3>
                     <p className="text-base mt-2 font-normal">

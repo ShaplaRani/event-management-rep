@@ -1,0 +1,27 @@
+[
+   {
+        "id": "1",
+        "image":"https://i.ibb.co/fnc4SC6/member1.png",
+        "name": "Awlad Hossain",
+        "title":"CEO"
+    },
+    {
+        "id": "2",
+        "image":"https://i.ibb.co/X4rJ3MH/member2.png",
+        "name": "Safia Chowdhury",
+        "title":"Instructor"
+    },
+    {
+        "id": "3",
+        "image":"https://i.ibb.co/PrY79Lw/member3.png",
+        "name": "Rokib Hossain",
+        "title":"Decorator"
+    },
+    {
+        "id": "4",
+        "image":"https://i.ibb.co/SBfd8PG/member4.png",
+        "name": "Chaity Chowdhury",
+        "title":"Banquet Manager"
+    }
+   
+]
