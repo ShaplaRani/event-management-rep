@@ -46,16 +46,14 @@ sum(1, "2");
 - C: `"12"`
 - D: `3`
 
-<details><summary><b>Answer</b></summary>
-<p>
+
 
 #### Answer: C:`"12"`. 
 
-<i>Write your explanation here</i>
+### Explanation:
 
  In JavaScript, when we use the + operator with one or both strings operands , it performs concatenation instead of addition. Function call sum(1, "2"); here  first argument 1 is  a number but the second argument "2" is a string. Therefore, JavaScript will concatenate the string "2" with the number 1, resulting in the string "12."
-</p>
-</details>
+
 
 ###### 3. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -73,18 +71,16 @@ console.log(food);
 - C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
-<p>
+
 
 #### Answer: A: ['🍕', '🍫', '🥑', '🍔'] .
 
-<i>Write your explanation here</i>
+### Explanation:
 In this code, an array food is created with four elements. Then, an object info is created with a property favoriteFood that initially holds the first element of the food array, which is "🍕". Later, the value of info.favoriteFood is reassigned to "🍝", but this change does not affect the original food array.
 
  So,
  when we log the food array, it remains unchanged, and the output is ['🍕', '🍫', '🥑', '🍔'].
-</p>
-</details>
+
 
 ###### 4. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -101,19 +97,17 @@ console.log(sayHi());
 - C: `Hi there, null`
 - D: `ReferenceError`
 
-<details><summary><b>Answer</b></summary>
-<p>
+
 
 #### Answer:B: `Hi there, undefined` .
 
-<i>Write your explanation here</i>
+### Explanation:
 
   In the sayHi function, there is a parameter name that expects an argument when the function is called. 
 However, when we call sayHi() without providing any argument, name remains undefined.
 
  The function still  executes, but it concatenates the undefined value with the string, resulting in "Hi there, undefined" being returned and logged to the console.
-</p>
-</details>
+
 
 ###### 5. Write the `correct answer` from the following options and give an explanation (2-5 lines).
 
@@ -133,15 +127,13 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details><summary><b>Answer</b></summary>
-<p>
+
 
 #### Answer: C: 3 .
 
-<i>Write your explanation here</i>
+### Explanation:
 
 In this code, a forEach loop iterates through the nums array. For each element num in the array, the if (num) condition checks if the value of num is truthy (in JavaScript, 0 is falsy, and any non-zero number is truthy). Since there are three non-zero elements in the nums array (1, 2, and 3), the count variable is incremented for each of them. Therefore, the value of count becomes 3, and that's what gets logged to the console.
-</p>
-</details>
+
 
 
