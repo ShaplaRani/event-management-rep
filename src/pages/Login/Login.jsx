@@ -95,9 +95,9 @@ import { FcGoogle } from "react-icons/fc";
                             Login</button>
                     </div>
                 </form>
-                 <div className="lg:w-3/4 mx-auto text-center mt-5 ">
+                 <div className="lg:w-3/4 mx-auto text-center mt-5 text-xl font-semibold ">
                        
-                      <p>OR</p>
+                      <p>Login With</p>
                       
                  </div>
                  <div className="w-4/5 md:w-3/4 lg:w-3/4 mx-auto mt-6 md:flex gap-4">

@@ -24,6 +24,22 @@ const Navbar = () => {
         >
             Register
         </NavLink>
+        <NavLink
+            to="/contact"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-red-700 underline" : ""
+            }
+        >
+            Contact Us
+        </NavLink>
+        <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-red-700 underline" : ""
+            }
+        >
+            About Us
+        </NavLink>
         
     </>
     const handleSignOut =() => {
