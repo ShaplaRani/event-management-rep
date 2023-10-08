@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from 'sweetalert';
 import { FaEyeSlash,FaEye,FaGithub } from "react-icons/fa";
@@ -10,7 +10,8 @@ import { FcGoogle } from "react-icons/fc";
     const {signInUser,signInWithGoogle,signInWithGithub} = useContext(AuthContext)
     const [showPassword,setShowPassword] = useState(false)
     const navigate = useNavigate();
-    
+    const location = useLocation();
+    console.log('login location',location);
     const handleLogin = e => {
         e.preventDefault();
        const email = e.target.email.value;
@@ -21,18 +22,19 @@ import { FcGoogle } from "react-icons/fc";
        .then( result => {
         console.log(result.user);
         e.target.reset();
-        navigate('/')
+        navigate(location?.state? location.state:'/')
        
        })
        .catch(error => {
         swal(error.message)
        })
     }
-   //github
+   //google
     const handleGoogleSignIn = () => {
         signInWithGoogle()
         .then(result => {
             console.log(result.user)
+            navigate(location?.state? location.state:'/')
         })
         .catch(error => {
             console.error(error)
@@ -44,6 +46,7 @@ import { FcGoogle } from "react-icons/fc";
         signInWithGithub()
         .then(result => {
             console.log(result.user);
+            navigate(location?.state? location.state:'/')
         })
         .then( error => {
             console.log(error);
