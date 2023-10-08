@@ -30,7 +30,8 @@ const ServicesCard = ({service}) => {
      </div>
       <div className='mt-9'>
 
-        <Link to={`/service/${id}`}> <button className='bg-orange-500 text-white w-full py-2 rounded-lg'>Details </button></Link>
+        <Link to={`/service/${id}`}> <button className='bg-orange-500 text-white w-full py-2
+         rounded-lg'>Details </button></Link>
       </div>
   </div>
   {/* <div className="flex items-center justify-between p-6">
