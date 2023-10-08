@@ -6,12 +6,13 @@ import {BsTelephone,BsClock } from 'react-icons/bs';
 const Contact = () => {
     return (
         <div className="w-10/12 m-auto my-20">
-            <h2 className="text-3xl font-semibold text-center mb-8">Contact Us</h2>
+            <h2 className="text-3xl font-semibold text-center mb-2">Contact Us</h2>
+            <p className="max-w-3xl m-auto text-center mb-16 text-base font-normal"> We are here to make your special moments truly exceptional. If you are ready to start planning your next unforgettable event or have any questions about our services, our dedicated team is just a message or call away</p>
           <div className='lg:flex gap-7'>
             
             <div className='flex-1 grid grid-cols-1 md:grid-cols-2 gap-5'>
-            <div className="border p-5 ">
-                <p className="text-center flex justify-center text-5xl"> <BiMap></BiMap></p>
+            <div className="border shadow-lg bg-red-100 p-5 ">
+                <p className="text-center flex justify-center text-5xl text-orange-700"> <BiMap></BiMap></p>
                 <div className='mt-3 text-center'>
                     <h3 className="text-xl font-medium">Postal Address</h3>
                     <p className="text-base mt-2 font-normal">Unica Event Agency 85 Fentiman Ave Ottawa, ON K1S 0T7</p>

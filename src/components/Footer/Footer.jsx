@@ -4,10 +4,10 @@ import { BiLogoFacebook } from "react-icons/bi";
 
 const Footer = () => {
     return (
-        <div className=" bg-yellow-100 py-24 ">
-            <div className="w-10/12 lg:px-7 mx-auto flex justify-between" >
-                <p className="uppercase font-bold text-2xl text-orange-500">The site of our campaigns</p>
-                <div className="flex gap-4">
+        <div className=" bg-orange-100 py-24 ">
+            <div className="w-10/12  mx-auto flex justify-between mb-7" >
+                <p className="uppercase font-semibold md:font-bold md:text-2xl text-orange-500">The site of our campaigns</p>
+                <div className="flex gap-2 md:gap-4">
                     <div className="w-7 h-7 items-center rounded-full flex justify-center bg-white">
                         <a className="" href=""><BiLogoFacebook className="text-blue-500"></BiLogoFacebook></a>
                     </div>
@@ -23,30 +23,31 @@ const Footer = () => {
                 </div>
 
             </div>
-            <footer className=" footer grid justify-between text-black w-10/12 
-             mx-auto  border p-10 ">
-                <nav>
-                    <header className="footer-title">Services</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+            <footer className="  grid grid-cols-2 md:grid-cols-4 justify-between text-black w-10/12 
+             mx-auto ">
+                <nav className="text-base font-medium text-gray-700">
+                    <header className="footer-title text-gray-900 opacity-100">Services</header>
+                    
+                    <p className="link link-hover">Branding</p>
+                    <p className="link link-hover">Design</p>
+                    <p className="link link-hover">Marketing</p>
+                    <p className="link link-hover">Advertisement</p>
                 </nav>
-                <nav>
-                    <header className="footer-title">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                <nav className="text-base font-medium text-gray-700">
+                    <header className="footer-title  text-gray-900 opacity-100">Company</header>
+                    <p className="link link-hover">About us</p>
+                    <p className="link link-hover">Contact</p>
+                    <p className="link link-hover">Jobs</p>
+                    <p className="link link-hover">Press kit</p>
                 </nav>
-                <nav>
-                    <header className="footer-title">Legal</header>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                <nav className="text-base font-medium text-gray-700">
+                    <header className="footer-title mt-7 md:mt-0  text-gray-900 opacity-100">Legal</header>
+                    <p className="link link-hover">Terms of use</p>
+                    <p className="link link-hover">Privacy policy</p>
+                    <p className="link link-hover">Cookie policy</p>
                 </nav>
-                <div className="space-y-2">
-                    <h3 className="uppercase font-bold text-xl text-orange-500">subscribe now</h3>
+                <div className="space-y-2 mt-7 md:mt-0">
+                    <h3 className="uppercase font-bold text-xl md:text-lg lg:text-xl text-orange-500">subscribe now</h3>
                     <div className="form-control">
                        
                         <input type="email" placeholder="email" name="email" className="input input-bordered"

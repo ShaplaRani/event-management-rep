@@ -2,57 +2,60 @@
 
 const Skills = () => {
     return (
-        <div className="my-8">
-            <h2 className="text-center">My Skills</h2>
+        <div className="my-20 mb-28">
+            <h2 className="text-center text-2xl font-bold mb-4">Our Skills</h2>
+              <div className="max-w-3xl m-auto text-center mb-16 text-base font-normal">
+                  <p>We take pride in our extensive skill set that ensures your special occasions are nothing short of spectacular. Our team of dedicated professionals possesses a diverse range of talents and expertise to make your events truly memorable</p>
+              </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
                 {/* 1 */}
                 <div>
                  <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-orange-600">PHP</p>
-                    <span className="text-xl font-semibold">50%</span>
+                    <p className="text-xl font-semibold text-orange-600">Weddings</p>
+                    <span className="text-xl font-semibold">72%</span>
                  </div>
-                <progress className="progress progress-primary w-full" value="50" max="100"></progress>
+                <progress className="progress progress-primary w-full" value="72" max="100"></progress>
                 </div>
                  {/* 2 */}
                 <div>
                  <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-blue-600">javascript</p>
-                    <span className="text-xl font-semibold">80%</span>
-                 </div>
-                <progress className="progress progress-primary w-full" value="80" max="100"></progress>
-                </div>
-                 {/* 3 */}
-                <div>
-                 <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-blue-600">HTML/CSS</p>
-                    <span className="text-xl font-semibold">90%</span>
-                 </div>
-                <progress className="progress progress-primary w-full" value="90" max="100"></progress>
-                </div>
-                 {/* 4 */}
-                <div>
-                 <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-orange-600">Tailwind CSS</p>
+                    <p className="text-xl font-semibold text-blue-600">Birthday Parties</p>
                     <span className="text-xl font-semibold">95%</span>
                  </div>
                 <progress className="progress progress-primary w-full" value="95" max="100"></progress>
                 </div>
+                 {/* 3 */}
+                <div>
+                 <div className="flex justify-between">
+                    <p className="text-xl font-semibold text-blue-600">Anniversaries</p>
+                    <span className="text-xl font-semibold">80%</span>
+                 </div>
+                <progress className="progress progress-primary w-full" value="80" max="100"></progress>
+                </div>
+                 {/* 4 */}
+                <div>
+                 <div className="flex justify-between">
+                    <p className="text-xl font-semibold text-orange-600">Engagement Parties</p>
+                    <span className="text-xl font-semibold">90%</span>
+                 </div>
+                <progress className="progress progress-primary w-full" value="90" max="100"></progress>
+                </div>
                  {/* 5 */}
                 <div>
                  <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-orange-600">Firebase</p>
-                    <span className="text-xl font-semibold">40%</span>
+                    <p className="text-xl font-semibold text-orange-600">Retirement Parties</p>
+                    <span className="text-xl font-semibold">65%</span>
                  </div>
-                <progress className="progress progress-primary w-full" value="40" max="100"></progress>
+                <progress className="progress progress-primary w-full" value="65" max="100"></progress>
                 </div>
                 {/* 6 */}
                 <div>
                      
                  <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-blue-600">React Router</p>
-                    <span className="text-xl font-semibold">80%</span>
+                    <p className="text-xl font-semibold text-blue-600"> Baby showe</p>
+                    <span className="text-xl font-semibold">60%</span>
                  </div>
-                <progress className="progress progress-primary w-full" value="80" max="100"></progress>
+                <progress className="progress progress-primary w-full" value="60" max="100"></progress>
                 </div>
                 
             </div>

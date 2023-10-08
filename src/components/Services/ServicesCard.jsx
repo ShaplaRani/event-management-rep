@@ -22,8 +22,8 @@ const ServicesCard = ({service}) => {
     </h4>
      <div>
         {
-             description.length > 220 ?<p className="mt-3 block  text-lg font-normal  text-gray-700 antialiased">
-                {description.slice(0,220)} 
+             description.length > 150 ?<p className="mt-3 block  text-lg font-normal  text-gray-700 antialiased">
+                {description.slice(0,150)} 
              <Link className='text-orange-500 font-bold'>  Read More...</Link></p>:
               <p>{description}</p>
         }
