@@ -2,7 +2,7 @@ import { BsCheckLg } from "react-icons/bs";
 import social from '../../assets/socialImage.jpg'
 const Future = () => {
     return (
-        <div className=" lg:flex  justify-center items-center mt-20">
+        <div className=" flex flex-col-reverse lg:flex-row  justify-center items-center mt-20">
             <div className="flex-1 space-y-4" data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000">
