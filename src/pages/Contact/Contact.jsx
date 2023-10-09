@@ -19,16 +19,16 @@ const Contact = () => {
                 </div>
             </div>
             {/*  2*/}
-            <div className="border p-5 ">
-                <p className="text-center flex justify-center text-5xl"> <BsClock></BsClock></p>
+            <div className="border shadow-lg bg-red-100 p-5 ">
+                <p className="text-center flex justify-center text-5xl text-orange-700"> <BsClock></BsClock></p>
                 <div className='mt-3 text-center'>
                     <h3 className="text-xl font-medium">Open Hours</h3>
                     <p className="text-base mt-2 font-normal">Monday – Friday 8.00 am – 5.00 pm, Weekend Closed</p>
                 </div>
             </div>
             {/* 3 */}
-            <div className="border p-5 ">
-                <p className="text-center flex justify-center text-5xl"> <BsTelephone></BsTelephone></p>
+            <div className="border shadow-lg bg-red-100 p-5 ">
+                <p className="text-center flex justify-center text-5xl text-orange-700"> <BsTelephone></BsTelephone></p>
                 <div className='mt-3 text-center'>
                     <h3 className="text-xl font-medium">Phone & E-mail</h3>
                    
@@ -40,8 +40,8 @@ const Contact = () => {
                 </div>
             </div>
             {/* 4 */}
-            <div className="border p-5 ">
-                <p className="text-center flex justify-center text-5xl"> <RiEditBoxLine></RiEditBoxLine></p>
+            <div className="border shadow-lg bg-red-100 p-5 ">
+                <p className="text-center flex justify-center text-5xl text-orange-700"> <RiEditBoxLine></RiEditBoxLine></p>
                 <div className='mt-3 text-center'>
                     <h3 className="text-xl font-medium">Sessions</h3>
                     <p className="text-base mt-2 font-normal">

@@ -7,9 +7,13 @@ Click here for the live link:[https://event-management-f35b3.web.app](https://ev
 
 ###  At least five  different features and functionalities of my website is giving below.
 
-* Event Categories and Routing:
+* The website offers a variety of event services, including weddings, birthday parties, anniversaries, engagement parties, retirement parties, and baby showers. Each service listing displays a relevant name, image, price, and a short description to help users understand what is offered
 
-Implement dynamic routing with React Router to create distinct pages or sections for each event category (Weddings, Birthdays, etc.).
-Users can easily navigate to their desired event category through the website's navigation menu or links.
+* Users can click on a specific service to access a detailed information page. These service detail pages provide comprehensive information about the selected service, helping users make informed decisions about their event planning.
 
-* Users can create accounts, log in, and manage their profiles, including personal information and event preferences.
+*  Certain sections of the website, such as the service detail pages,the contact us page,are protected routes  . Users must be logged in to access these pages. If a user is not logged in, they are redirected to the login page, ensuring privacy and security.
+
+* The website implements user registration and login functionality with email and password-based authentication. Users can create accounts, log in, and toggle between the login and registration views. Error messages are displayed if there are issues with passwords, emails, or login attempts.
+In addition to email and password-based authentication, the website offers  two additional login method, such as using social media accounts like  GitHub or Google. This provides users with alternative login options for convenience.
+
+* After logging in, users can see their username, profile picture, and a logout button in the website's header. Clicking the logout button allows users to securely log out of their accounts.
