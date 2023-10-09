@@ -33,7 +33,7 @@ const Skills = () => {
                  {/* 3 */}
                 <div>
                  <div className="flex justify-between">
-                    <p className="text-xl font-semibold text-blue-600">Anniversaries</p>
+                    <p className="text-xl font-semibold text-blue-600">Anniversaries Parties</p>
                     <span className="text-xl font-semibold">80%</span>
                  </div>
                 <progress className="progress progress-primary w-full" value="80" max="100"></progress>

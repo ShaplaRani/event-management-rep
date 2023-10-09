@@ -21,21 +21,19 @@ const Register = () => {
         const password = form.get ('password');
         const accepted= e.target.terms.checked
         console.log(name,photo,email,password,accepted);
-        //reset success and error
-        // setRegisterSuccess('')
-        // setRegisterError('')
+       
         if(password.length < 6){
-            // setRegisterError('password should be a least 6 characters or larger');
+            
             swal('password should be a least 6 characters or larger')
             return;
         }
         if(!/[A-Z]/.test(password)){
-            // setRegisterError('Your password should have at least one capital letter');
+            
             swal('Your password should have at least one capital letter')
             return;
         }
         if(!/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)){
-            // setRegisterError('Your password should have at least one special character');
+            
             swal('Your password should have at least one special character')
             return;
         }
@@ -62,7 +60,7 @@ const Register = () => {
         })
         .catch(error => {
             console.error(error)
-            // setRegisterError(error.message)
+            
             swal(error.message)
         })
     }
@@ -113,9 +111,7 @@ const Register = () => {
                            }
                          </span>
                         
-                        {/* <label className="label">
-                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                        </label> */}
+                        
                     </div>
                      <div className="mt-5 text-base  font-normal text-gray-600">
                         <input type="checkbox" name="terms" id="terms" />

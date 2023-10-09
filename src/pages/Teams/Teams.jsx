@@ -14,11 +14,7 @@ const Teams = () => {
    <div className="py-20 text-center text-neutral-content">
     <div className="max-w-md m-auto">
       <h1 className="mb-14 text-3xl md:text-5xl font-bold">Meet Our Team</h1>
-      {/* <p className="mb-5">Provident cupiditate voluptatem et in.
-       Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque
-        aut repudiandae et a id nisi.</p> */}
-      
-    </div>
+      </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
     {
         teams?.map(member => <Member key={member.id} member={member}></Member>)
