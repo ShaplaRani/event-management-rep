@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+// import logo from "../../assets/logo.PNG"
 import swal from 'sweetalert';
 
 const Navbar = () => {
@@ -61,7 +62,7 @@ const Navbar = () => {
         <div className=" w-10/12 m-auto  lg:flex  text-center   bg-base-100 mt-12 items-center justify-between">
 
            
-                
+                {/* <img className="h-10 w-20 text-xl" src={logo} alt="gfdlvgfog" /> */}
                 <a className="btn btn-ghost normal-case text-xl">social Events</a>
                     <ul className=" flex gap-3 md:gap-5 justify-center mt-1 mb-2 ">
            

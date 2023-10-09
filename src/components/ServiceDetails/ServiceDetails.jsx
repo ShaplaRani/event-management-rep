@@ -9,7 +9,7 @@ const ServiceDetails = () => {
     console.log('details data',service,id);
     const {image, description,name} = service;
     return (
-        <div className="w-10/12 m-auto p-7 border shadow-orange-50 rounded-xl my-20">
+        <div className="w-10/12 m-auto p-7  shadow-lg rounded-xl my-20">
             <div>
                 <img className="rounded-lg h-[70vh] w-full" src={image} alt="" />
                 <h3 className="mt-5 mb-2 text-2xl font-bold ">{name}</h3>

@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from 'sweetalert';
 import { FaEyeSlash,FaEye } from "react-icons/fa";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
     // const [registerSuccess , setRegisterSuccess] = useState('');
     // const [registerError,setRegisterError] = useState('')
     const [showPassword,setShowPassword] = useState(false)
     
-    const {createUser} = useContext(AuthContext);
+    const {createUser,logout} = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -46,7 +47,17 @@ const Register = () => {
         createUser(email,password)
         .then(result =>{
             console.log(result.user);
-            // setRegisterSuccess('User Created Successfully')
+            //logout 
+            logout()
+            .then()
+            .catch(error => console.error(error))
+            // update profile
+            updateProfile(result.user,{
+              displayName:name,
+              photoURL:photo  
+            })
+            .then(() => {console.log("profile update")})
+            .catch( error => console.error(error))
             swal('User Created Successfully')
         })
         .catch(error => {

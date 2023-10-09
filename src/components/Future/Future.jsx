@@ -3,7 +3,9 @@ import social  from '../../assets/socialImage.jpg'
 const Future = () => {
     return (
         <div className=" lg:flex  justify-center items-center mt-20">
-            <div className="flex-1 space-y-4">
+            <div className="flex-1 space-y-4" data-aos="fade-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
                 <h3 className="text-2xl font-semibold mb-8">A partial list of our services includes:</h3>
                 <p className="flex md:items-center gap-2 text-xl text-gray-500 font-semibold">
                     <BsCheckLg className="text-orange-500 text-2xl font-bold"></BsCheckLg>
@@ -35,7 +37,9 @@ const Future = () => {
 
               </div>
             <div className="flex-1">
-                 <img src={social} alt="" />
+                 <img src={social} alt=""  data-aos="fade-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000"/>
             </div>
         </div>
     );
